@@ -1,0 +1,59 @@
+batchsize: 16
+iteration: 20000
+iteration_decay_start: 20000
+seed: 0
+display_interval: 500
+progressbar_interval: 500
+evaluation_interval: 500
+
+models:
+  generator:
+    fn: gen_models/resnet.py
+    name: ResNetGenerator
+    args:
+      dim_z: 128
+      bottom_width: 4
+      ch: 64
+      n_classes_src: 1000
+      n_classes_tgt: 200
+
+  discriminator:
+      fn: dis_models/snresnet.py
+      name: SNResNetProjectionDiscriminator
+      args:
+        ch: 64
+        n_classes_src: 1000
+        n_classes_tgt: 200
+
+dataset:
+  dataset_fn: datasets/imagenet.py
+  dataset_name: ImageNetDataset
+  args:
+    path: datasets/image_list_cub_resized.txt
+    size: 128
+    resize_method: bilinear
+    augmentation: False
+
+adam:
+  alpha: 0.0002
+  beta1: 0.0
+  beta2: 0.9
+
+updater:
+  fn: updater.py
+  name: FinetuneUpdater
+  args:
+    n_dis: 5
+    n_gen_samples: 32
+    conditional: True
+    loss_type: hinge
+    FM_layer: -1
+    lambda_FM: 0
+
+pretrained:
+  gen: './pretrained/sn_projection_128/ResNetGenerator_850000.npz'
+  dis: './pretrained/sn_projection_128/SNResNetProjectionDiscriminator_850000.npz'
+
+eval:
+  inception_path: datasets/inception_model
+  stat_file: datasets/cub_resized_stats/full.npz
