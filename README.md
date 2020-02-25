@@ -15,7 +15,7 @@ Generated samples over fine-tuning FFHQ-pretrained StyleGAN
 
 ### More generated samples (StyleGAN)
 
-Generated samples on [Animal Face](https://vcla.stat.ucla.edu/people/zhangzhang-si/HiT/exp5.html) and [Anime Face](http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/) datasets
+Generated samples under [Animal Face](https://vcla.stat.ucla.edu/people/zhangzhang-si/HiT/exp5.html) and [Anime Face](http://www.nurs.or.jp/~nagadomi/animeface-character-dataset/) datasets
 
 <img src="./resources/stylegan/original.png" width="256"> &nbsp; <img src="./resources/stylegan/bear.png" width="256"> &nbsp; <img src="./resources/stylegan/cat.png" width="256">
 
@@ -40,7 +40,9 @@ Generated samples on [Animal Face](https://vcla.stat.ucla.edu/people/zhangzhang-
 
 ### More generated samples (SNGAN-projection)
 
-Comparison of fine-tuning (left) and freeze D (right)
+Comparison of fine-tuning (left) and freeze D (right) under [Oxford Flower](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html), [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html), and [Caltech-256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) datasets
+
+Freeze D generates more class-consistent results (see row 2, 8 of Oxford Flower)
 
 <img src="./resources/projection/flower_base.png" width="384"> &nbsp; <img src="./resources/projection/flower_freeze.png" width="384">
 
