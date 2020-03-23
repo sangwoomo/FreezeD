@@ -6,6 +6,8 @@ The code is heavily based on the [StyleGAN-pytorch](https://github.com/rosinalit
 
 See `stylegan` and `projection` directory for StyleGAN and SNGAN-projection experiments, respectively.
 
+**Note:** There is a bug in PyTorch 1.4.0, hence one should use `torch>=1.5.0` or `torch<=1.3.0`. See Issue [#1](https://github.com/sangwoomo/FreezeD/issues/1).
+
 ### Generated samples
 
 Generated samples over fine-tuning FFHQ-pretrained StyleGAN
