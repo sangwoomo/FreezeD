@@ -1,5 +1,11 @@
 # FreezeD: A Simple Baseline for Fine-tuning GANs
 
+**Update (2020/04/06)**
+
+Current code evaluate FID scores with `inception.train()` mode. Fixing it to `inception.eval()` may degrade the overall scores. Thanks to @jychoi118 ([Issue #3](https://github.com/sangwoomo/FreezeD/issues/3)) for fixing this.
+
+---
+
 Code for ["Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs"](https://arxiv.org/abs/2002.10964).
 
 The code is heavily based on the [StyleGAN-pytorch](https://github.com/rosinality/style-based-gan-pytorch) and [SNGAN-projection-chainer](https://github.com/pfnet-research/sngan_projection) codes.
