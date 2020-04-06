@@ -2,7 +2,7 @@
 
 **Update (2020/04/06)**
 
-Current code evaluate FID scores with `inception.train()` mode. Fixing it to `inception.eval()` may degrade the overall scores. Thanks to @jychoi118 ([Issue #3](https://github.com/sangwoomo/FreezeD/issues/3)) for fixing this.
+Current code evaluates FID scores with `inception.train()` mode. Fixing it to `inception.eval()` may degrade the overall scores. Thanks to @jychoi118 ([Issue #3](https://github.com/sangwoomo/FreezeD/issues/3)) for reporting this.
 
 ---
 
