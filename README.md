@@ -6,7 +6,7 @@ Current code evaluates FID scores with `inception.train()` mode. Fixing it to `i
 
 ---
 
-Code for ["Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs"](https://arxiv.org/abs/2002.10964).
+Code for ["Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs"](https://arxiv.org/abs/2002.10964) (CVPRW 2020).
 
 The code is heavily based on the [StyleGAN-pytorch](https://github.com/rosinality/style-based-gan-pytorch) and [SNGAN-projection-chainer](https://github.com/pfnet-research/sngan_projection) codes.
 
@@ -14,7 +14,7 @@ See `stylegan` and `projection` directory for StyleGAN and SNGAN-projection expe
 
 **Note:** There is a bug in PyTorch 1.4.0, hence one should use `torch>=1.5.0` or `torch<=1.3.0`. See Issue [#1](https://github.com/sangwoomo/FreezeD/issues/1).
 
-### Generated samples
+## Generated samples
 
 Generated samples over fine-tuning FFHQ-pretrained StyleGAN
 
@@ -57,3 +57,16 @@ Freeze D generates more class-consistent results (see row 2, 8 of Oxford Flower)
 <img src="./resources/projection/cub_base.png" width="384"> &nbsp; <img src="./resources/projection/cub_freeze.png" width="384">
 
 <img src="./resources/projection/caltech_base.png" width="384"> &nbsp; <img src="./resources/projection/caltech_freeze.png" width="384">
+
+
+## Citation
+If you use this code for your research, please cite our papers.
+```
+@inproceedings{
+    mo2020freeze,
+    title={Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs},
+    author={Mo, Sangwoo and Cho, Minsu and Shin, Jinwoo},
+    booktitle = {CVPR AI for Content Creation Workshop},
+    year={2020},
+}
+```
