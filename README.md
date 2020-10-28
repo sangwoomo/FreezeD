@@ -1,4 +1,8 @@
-# FreezeD: A Simple Baseline for Fine-tuning GANs
+# FreezeD: a Simple Baseline for Fine-tuning GANs
+
+**Update (2020/10/28)**
+
+Release [checkpoints](https://drive.google.com/drive/folders/140y2e80koKA_URy6cNChpK4LKqGjWnv0) of StyleGAN fine-tuned on cat and dog datasets.
 
 **Update (2020/04/06)**
 
