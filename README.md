@@ -10,7 +10,7 @@ Current code evaluates FID scores with `inception.train()` mode. Fixing it to `i
 
 ---
 
-Code for ["Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs"](https://arxiv.org/abs/2002.10964) (CVPRW 2020).
+Official code for ["**Freeze the Discriminator: a Simple Baseline for Fine-Tuning GANs**"](https://arxiv.org/abs/2002.10964) (CVPRW 2020).
 
 The code is heavily based on the [StyleGAN-pytorch](https://github.com/rosinality/style-based-gan-pytorch) and [SNGAN-projection-chainer](https://github.com/pfnet-research/sngan_projection) codes.
 
