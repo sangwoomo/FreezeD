@@ -30,7 +30,10 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import numpy as np
 import torch
 from scipy import linalg
-from scipy.misc import imread
+try:
+   from scipy.misc import imread
+except:
+   from imageio import imread
 from torch.nn.functional import adaptive_avg_pool2d
 
 try:
